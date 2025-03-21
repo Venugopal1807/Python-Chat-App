@@ -3,9 +3,13 @@
 ## OVERVIEW
 This application is built with Flask and Flask-SocketIO to enable live, two-way communication in a browser-based chat room. Users get random usernames, automatically assigned avatars (via the Genderize.io API), and can see messages in real time.
 
-   ![Chat Screenshot](assets/chat-screenshot.png)
+<p align="center">
+  <img src="assets/one.png" alt="Screenshot 1" width="400" />
+  <img src="assets/two.png" alt="Screenshot 2" width="400" />
+</p>
 
-   https://your-deployed-app-url.example.com
+
+   https://python-chat-app-isfe.onrender.com
 
 ## KEY FEATURES
 - Real-Time Messaging: Multiple users can join and send messages instantly.
@@ -21,7 +25,7 @@ This application is built with Flask and Flask-SocketIO to enable live, two-way 
 - Requests library for calling the Genderize.io API
 - HTML, CSS, JavaScript on the frontend
 
-** INSTALLATION & SETUP
+## INSTALLATION & SETUP
 1) Clone the repository:
    git clone https://github.com/yourusername/python-chat-app.git
    cd python-chat-app
