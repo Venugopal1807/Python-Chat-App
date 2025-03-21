@@ -210,32 +210,29 @@ body {
 }
 
 @media (max-width: 480px) {
-  .chat-header {
-    font-size: 20px;
-    padding: 15px;
-  }
-
-  .chat-messages {
-    padding: 15px;
-  }
-
-  .message img {
-    width: 35px;
-    height: 35px;
-  }
-
-  .message-content {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  /* MAKE .username-container A COLUMN LAYOUT AT VERY SMALL SCREENS */
+  /* Keep the username container in a single row */
   .username-container {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevents wrapping to a new line */
   }
 
+  /* Shrink the input field */
+  #username-input {
+    width: 60%;         /* Adjust as needed */
+    margin-right: 5px;  /* Small gap before the button */
+    padding: 8px;
+    font-size: 14px;    /* Slightly smaller font */
+  }
+
+  /* Shrink the button */
   #update-username-button {
-    margin-top: 10px; /* ensures the button goes to a new line */
+    width: 35%;         /* Adjust as needed */
+    padding: 8px;
+    font-size: 14px;    /* Slightly smaller font */
+    margin: 0;          /* Remove any top/bottom margin */
   }
 }
+
