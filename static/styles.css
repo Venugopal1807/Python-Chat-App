@@ -209,12 +209,28 @@ body {
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
-  .chat-container {
-    margin: 20px auto;
-    max-width: 800px; /* A bit wider for iPad Pro screens */
-    height: auto;
+  /* Make the entire body a flex container to center the chat */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    align-items: center; /* Vertical center */
+    justify-content: center; /* Horizontal center */
   }
 
+  /* Center the chat container and increase its size */
+  .chat-container {
+    margin: 0; /* Override any existing margins */
+    width: 900px; /* Increase width for iPad Pro */
+    height: auto;
+    border-radius: 15px; /* Keep a nice border radius */
+  }
+
+  /* Keep the username input and button in one row */
   .username-container {
     display: flex;
     flex-direction: row;
@@ -223,17 +239,19 @@ body {
     flex-wrap: nowrap;
   }
 
+  /* Increase input width & font size */
   #username-input {
-    width: 70%;
+    width: 65%;
     margin-right: 5px;
-    padding: 12px;
-    font-size: 16px;
+    padding: 14px;
+    font-size: 17px;
   }
 
+  /* Increase button width & font size */
   #update-username-button {
-    width: 25%;
-    padding: 12px;
-    font-size: 16px;
+    width: 30%;
+    padding: 14px;
+    font-size: 17px;
     margin: 0;
   }
 }
