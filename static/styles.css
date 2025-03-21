@@ -145,47 +145,98 @@ body {
   margin-left: 10px;
 }
 
-/* iPad Version: 768px to 1024px */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Center the container and adjust size for iPad screens */
+@media (min-width: 768px) and (max-width: 820px) {
+  /* Center or resize the chat container as desired */
   .chat-container {
-    max-width: 700px; /* Slightly narrower than desktop */
-    margin: 20px auto; /* Keep some top/bottom margin */
-    height: auto;      /* Let content define the height */
-    display: flex;
-    flex-direction: column;
+    margin: 20px auto;
+    max-width: 700px;
+    height: auto;
   }
 
-  /* Keep the username container in a single row */
+  /* Keep username input & button in one row */
   .username-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap; /* Prevent wrapping to a new line */
-    padding: 15px 20px; /* Adjust spacing as needed */
+    flex-wrap: nowrap; /* No wrapping */
   }
 
+  /* Adjust input/button widths so they fit side by side */
   #username-input {
-    width: 60%;        /* Adjust to fit your design */
-    margin-right: 10px;
-    padding: 10px;
-    font-size: 15px;   /* Slightly smaller for iPad */
-  }
-
-  #update-username-button {
-    width: 35%;        /* Adjust to fit your design */
+    width: 70%;
+    margin-right: 5px;
     padding: 10px;
     font-size: 15px;
   }
 
-  /* Adjust chat messages area for iPad height */
-  .chat-messages {
-    flex-grow: 1;
-    height: 400px; /* or something that suits your iPad layout */
+  #update-username-button {
+    width: 25%;
+    padding: 10px;
+    font-size: 15px;
+    margin: 0;
   }
 }
 
+@media (min-width: 820px) and (max-width: 1024px) {
+  .chat-container {
+    margin: 20px auto;
+    max-width: 750px; /* Slightly larger than iPad Mini */
+    height: auto;
+  }
+
+  .username-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  #username-input {
+    width: 70%;
+    margin-right: 5px;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  #update-username-button {
+    width: 25%;
+    padding: 12px;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .chat-container {
+    margin: 20px auto;
+    max-width: 800px; /* A bit wider for iPad Pro screens */
+    height: auto;
+  }
+
+  .username-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  #username-input {
+    width: 70%;
+    margin-right: 5px;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  #update-username-button {
+    width: 25%;
+    padding: 12px;
+    font-size: 16px;
+    margin: 0;
+  }
+}
 
 @media (max-width: 768px) {
   .chat-container {
@@ -242,18 +293,17 @@ body {
 
   /* Shrink the input field */
   #username-input {
-    width: 60%;         /* Adjust as needed */
-    margin-right: 5px;  /* Small gap before the button */
+    width: 60%; /* Adjust as needed */
+    margin-right: 5px; /* Small gap before the button */
     padding: 8px;
-    font-size: 14px;    /* Slightly smaller font */
+    font-size: 14px; /* Slightly smaller font */
   }
 
   /* Shrink the button */
   #update-username-button {
-    width: 35%;         /* Adjust as needed */
+    width: 35%; /* Adjust as needed */
     padding: 8px;
-    font-size: 14px;    /* Slightly smaller font */
-    margin: 0;          /* Remove any top/bottom margin */
+    font-size: 14px; /* Slightly smaller font */
+    margin: 0; /* Remove any top/bottom margin */
   }
 }
-
