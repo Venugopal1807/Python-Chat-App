@@ -162,9 +162,13 @@ body {
     flex-wrap: nowrap; /* No wrapping */
   }
 
+  #current-username {
+    width: 20%;
+  }
+
   /* Adjust input/button widths so they fit side by side */
   #username-input {
-    width: 50%;
+    width: 40%;
     margin-right: 5px;
     padding: 10px;
     font-size: 15px;
