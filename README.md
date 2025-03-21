@@ -9,7 +9,7 @@ This application is built with Flask and Flask-SocketIO to enable live, two-way 
 </p>
 
 ## Live Link
-   https://python-chat-app-isfe.onrender.com
+   https://python-chat-app-isfe.onrender.com/
 
 ## KEY FEATURES
 - Real-Time Messaging: Multiple users can join and send messages instantly.
