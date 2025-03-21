@@ -8,7 +8,7 @@ This application is built with Flask and Flask-SocketIO to enable live, two-way 
   <img src="assets/two.png" alt="Screenshot 2" width="400" />
 </p>
 
-
+## Live Link
    https://python-chat-app-isfe.onrender.com
 
 ## KEY FEATURES
@@ -24,23 +24,6 @@ This application is built with Flask and Flask-SocketIO to enable live, two-way 
 - Flask-SocketIO for real-time WebSocket communication
 - Requests library for calling the Genderize.io API
 - HTML, CSS, JavaScript on the frontend
-
-## INSTALLATION & SETUP
-1) Clone the repository:
-   git clone https://github.com/yourusername/python-chat-app.git
-   cd python-chat-app
-
-2) Create & Activate a Virtual Environment (Recommended):
-   python -m venv venv
-   (macOS/Linux) source venv/bin/activate
-   (Windows) venv\Scripts\activate
-
-3) Install Dependencies:
-   pip install -r requirements.txt
-
-4) Run the Application:
-   python app.py
-   (The app runs on http://127.0.0.1:5000 by default.)
 
 ## USAGE
 1) Open multiple browser tabs, each simulating a different user.
