@@ -147,24 +147,45 @@ body {
 
 /* iPad Version: 768px to 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    display: flex;
-    align-items: center;   /* Vertical center */
-    justify-content: center; /* Horizontal center */
-  }
-
+  /* Center the container and adjust size for iPad screens */
   .chat-container {
-    margin: 0;        /* Override base margin */
-    max-width: 700px; /* Slightly narrower for iPad */
-    height: auto;     /* Let content define height */
+    max-width: 700px; /* Slightly narrower than desktop */
+    margin: 20px auto; /* Keep some top/bottom margin */
+    height: auto;      /* Let content define the height */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Keep the username container in a single row */
+  .username-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+    padding: 15px 20px; /* Adjust spacing as needed */
+  }
+
+  #username-input {
+    width: 60%;        /* Adjust to fit your design */
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 15px;   /* Slightly smaller for iPad */
+  }
+
+  #update-username-button {
+    width: 35%;        /* Adjust to fit your design */
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  /* Adjust chat messages area for iPad height */
+  .chat-messages {
+    flex-grow: 1;
+    height: 400px; /* or something that suits your iPad layout */
   }
 }
+
 
 @media (max-width: 768px) {
   .chat-container {
